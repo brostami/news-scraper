@@ -1,0 +1,19 @@
+<div class="jumbotron" style="background-color: #20315A ; color: white;">
+      <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> New York Times Articles</strong></h1>
+</div>
+
+{{#each result}}
+<div class="card text-center">
+  <div class="card-header">
+    <a href="{{this.link}}">
+        <h4 class="card-header">{{this.title}}</h4>
+    </a>
+  </div>
+  <div class="card-block">
+    <p class="card-text">(Summary)</p>
+    <a href="/articles/{{this._id}}" class="btn btn-primary">Comment</a>
+  </div>
+</div>  
+{{/each}}  
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
